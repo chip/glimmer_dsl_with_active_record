@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+runner = File.expand_path('../../app/glimmer_dsl_with_active_record/launch.rb', __FILE__)
+
+require 'glimmer/launcher'
+
+launcher = Glimmer::Launcher.new([runner] + ARGV)
+launcher.launch
