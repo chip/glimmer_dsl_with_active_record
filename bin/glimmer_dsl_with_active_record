@@ -1,5 +1,15 @@
 #!/usr/bin/env ruby
 
+begin
+  if Object.constants.include?(:Concurrent)
+    Object.send(:remove_const, :Concurrent)
+  end
+  require 'concurrent'
+rescue StandardError => e
+  puts "Oops from #{bin/glimmer_dsl_with_active_record}"
+  puts e.message
+  puts e.backtrace
+end
 runner = File.expand_path('../../app/glimmer_dsl_with_active_record/launch.rb', __FILE__)
 
 require 'glimmer/launcher'

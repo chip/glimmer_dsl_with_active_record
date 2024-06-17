@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/ruby/debug
+  revision: 8abc50acba3d079aec8107c60ecae8a0285413ac
+  specs:
+    debug (1.9.2)
+      irb (~> 1.10)
+      reline (>= 0.3.8)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -90,6 +98,10 @@ GEM
     highline (3.0.1)
     i18n (1.14.5)
       concurrent-ruby (~> 1.0)
+    io-console (0.7.2)
+    irb (1.13.2)
+      rdoc (>= 4.0.0)
+      reline (>= 0.4.2)
     juwelier (2.4.9)
       builder
       bundler
@@ -155,6 +167,8 @@ GEM
     rchardet (1.8.0)
     rdoc (6.7.0)
       psych (>= 4.0.0)
+    reline (0.5.9)
+      io-console (~> 0.5)
     rouge (3.30.0)
     rspec (3.5.0)
       rspec-core (~> 3.5.0)
@@ -213,6 +227,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord
+  debug!
   glimmer-dsl-libui (~> 0.11.8)
   juwelier (= 2.4.9)
   rspec (~> 3.5.0)
