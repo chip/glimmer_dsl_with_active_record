@@ -12,5 +12,4 @@ group :development do
   gem 'rspec', '~> 3.5.0'
   gem 'juwelier', '2.4.9'
   gem 'simplecov', '>= 0'
-  gem "debug", github: "ruby/debug"
 end
