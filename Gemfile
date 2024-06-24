@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
-gem 'glimmer-dsl-libui', '~> 0.11.8'
+gem 'glimmer-dsl-libui', '~> 0.12.1'
 gem 'sqlite3', '~> 1.3'
 gem 'activerecord'
 
