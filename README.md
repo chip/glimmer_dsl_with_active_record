@@ -38,7 +38,6 @@ to run `rake db:seed` using the `SeedLoader`.
 - [Add rake tasks for ActiveRecord migrations](#add-rake-tasks-for-activerecord-migrations)
 - [Wire up ActiveRecord tasks in Rakefile](#wire-up-activerecord-tasks-in-rakefile)
 - [Verify rake tasks](#verify-rake-tasks)
-
 - [Prepare database](#prepare-database)
 - [Add Contact model](#add-contact-model)
 - [Add seed data](#add-seed-data)
@@ -83,11 +82,10 @@ gem 'sqlite3', '~> 1.4', force_ruby_platform: true
 
 ### Add db directory
 
-    mkdir db
+    mkdir -p db/migrate
 
 ### Add migration for contacts table
 
-    mkdir db/migrate
     touch db/migrate/20240708135100_create_contacts.rb
 
 ```ruby
