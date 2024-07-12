@@ -1,4 +1,4 @@
-require 'glimmer_dsl_with_active_record/model/greeting'
+require 'glimmer_dsl_with_active_record/model/contact'
 
 class GlimmerDslWithActiveRecord
   module View
@@ -16,7 +16,7 @@ class GlimmerDslWithActiveRecord
       #  to setup application menu
       #
       before_body do
-        @greeting = Model::Greeting.first
+        @contact = Contact.first
         menu_bar
       end
   
@@ -36,9 +36,47 @@ class GlimmerDslWithActiveRecord
           title 'Glimmer Dsl With Active Record'
           
           margined true
-          
-          label {
-            text <= [@greeting, :content]
+          vertical_box {
+            form {
+              stretchy false
+
+              entry {
+                label 'First name'
+                text <=> [@contact, :first_name]
+              }
+              entry {
+                label 'Last name'
+                text <=> [@contact, :last_name]
+              }
+              entry {
+                label 'Email'
+                text <=> [@contact, :email]
+              }
+              entry {
+                label 'Phone'
+                text <=> [@contact, :phone]
+              }
+              entry {
+                label 'Street address'
+                text <=> [@contact, :street]
+              }
+              entry {
+                label 'City'
+                text <=> [@contact, :city]
+              }
+              entry {
+                label 'State/Province'
+                text <=> [@contact, :state_or_province]
+              }
+              entry {
+                label 'Zip/Postal code'
+                text <=> [@contact, :zip_or_postal_code]
+              }
+              entry {
+                label 'Country'
+                text <=> [@contact, :country]
+              }
+            }
           }
         }
       }

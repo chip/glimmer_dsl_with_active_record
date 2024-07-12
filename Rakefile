@@ -53,3 +53,6 @@ Rake::RDocTask.new do |rdoc|
 end
 
 require 'glimmer/rake_task'
+require './support/active_record_rake_tasks'
+
+Rake::Task.define_task(:environment)
