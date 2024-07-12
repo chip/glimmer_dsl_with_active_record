@@ -56,3 +56,9 @@ require 'glimmer/rake_task'
 require './support/active_record_rake_tasks'
 
 Rake::Task.define_task(:environment)
+
+class Rails
+  def env
+    ENV['ENV'] || 'development'
+  end
+end
