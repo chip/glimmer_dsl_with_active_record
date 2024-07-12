@@ -18,12 +18,9 @@ follow the [ALTERNATIVE APPROACH](#alternative-approach).
 ## Setup
 
 1. Clone repository
-2. Install dependencies
-    bundle install
-3. Prepare database
-    rake db:prepare
-4. Run App
-    glimmer run
+2. Install dependencies: ``bundle install``
+3. Prepare database: ``rake db:prepare``
+4. Run app: ``glimmer run``
 
 ## ALTERNATIVE APPROACH
 
