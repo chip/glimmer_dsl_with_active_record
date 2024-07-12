@@ -15,6 +15,8 @@ to run `rake db:seed` using the `SeedLoader`.
 If you'd like to use this repository, just follow [Setup](#setup). Otherwise,
 follow the [ALTERNATIVE APPROACH](#alternative-approach).
 
+![Demo](./assets/images/demo.png "glimmer-dsl-libui app using ActiveRecord and sqlite3")
+
 ## Setup
 
 1. Clone repository
