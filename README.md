@@ -12,9 +12,17 @@ I decided to put together a tutorial to extend this idea further, including
 other migration tasks from `ActiveRecord::Tasks::DatabaseTask`, and an ability
 to run `rake db:seed` using the `SeedLoader`.
 
+If you'd like to use this repository, just follow [Setup](#setup). Otherwise,
+follow the [ALTERNATIVE APPROACH](#alternative-approach).
+
 ## Setup
 
+1. Clone repository
+2. Install dependencies
     bundle install
+3. Prepare database
+    rake db:prepare
+4. Run App
     glimmer run
 
 ## ALTERNATIVE APPROACH
