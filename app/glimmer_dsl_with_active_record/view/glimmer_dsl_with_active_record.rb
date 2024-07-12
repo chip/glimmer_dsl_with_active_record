@@ -32,7 +32,7 @@ class GlimmerDslWithActiveRecord
       body {
         window {
           # Replace example content below with your own custom window content
-          content_size 240, 240
+          content_size 300, 240
           title 'Glimmer Dsl With Active Record'
           
           margined true
