@@ -111,16 +111,16 @@ GEM
     libui (0.1.2.pre-x86_64-darwin)
     matrix (0.4.2)
     method_source (1.0.0)
-<<<<<<< HEAD
-=======
     mini_portile2 (2.8.7)
->>>>>>> 58428f5 (Update repo by following tutorial)
     minitest (5.24.1)
     multi_json (1.15.0)
     multi_xml (0.7.1)
       bigdecimal (~> 3.1)
     multipart-post (2.4.1)
     mutex_m (0.2.0)
+    nokogiri (1.16.6)
+      mini_portile2 (~> 2.8.2)
+      racc (~> 1.4)
     nokogiri (1.16.6-aarch64-linux)
       racc (~> 1.4)
     nokogiri (1.16.6-arm-linux)
@@ -152,11 +152,7 @@ GEM
     puts_debuggerer (1.0.1)
       awesome_print (~> 1.9.2)
     racc (1.8.0)
-<<<<<<< HEAD
     rack (3.1.7)
-=======
-    rack (3.1.6)
->>>>>>> 58428f5 (Update repo by following tutorial)
     rake (13.2.1)
     rake-tui (0.2.3)
       tty-prompt
@@ -211,16 +207,13 @@ PLATFORMS
   aarch64-linux
   arm-linux
   arm64-darwin
+  ruby
   x86-linux
   x86_64-darwin
   x86_64-linux
 
 DEPENDENCIES
-<<<<<<< HEAD
-  activerecord
-=======
   activerecord (~> 7.1, >= 7.1.3.4)
->>>>>>> 58428f5 (Update repo by following tutorial)
   glimmer-dsl-libui (~> 0.12.1)
   juwelier (= 2.4.9)
   rspec (~> 3.5.0)
